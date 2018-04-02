@@ -8,5 +8,11 @@ if plateform.DCCplateform == 'maya':
     from WPFMayaPlugin import MayaPluginManager
     plugin = MayaPluginManager()
 
+if plateform.DCCplateform == 'max':
+    # max plugin manager
+    clr.AddReference("WPFMaxPlugin")
+    from WPFMaxPlugin import MaxPluginManager
+    plugin = MaxPluginManager()
+
 # create
 plugin.Create()

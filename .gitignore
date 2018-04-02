@@ -18,4 +18,5 @@ temp/
 WPFTestApp/bin/
 WPFTestApp/obj/
 source/WPFMayaPlugin/obj/
+source/WPFMaxPlugin/obj/
 source/WPFDccPlugin/obj/

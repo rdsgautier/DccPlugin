@@ -40,6 +40,9 @@
     <Compile Include="lib\dccHelper\dccHelperBase.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="lib\dccHelper\dccHelperMax.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="lib\dccHelper\dccHelperMaya.py">
       <SubType>Code</SubType>
     </Compile>
