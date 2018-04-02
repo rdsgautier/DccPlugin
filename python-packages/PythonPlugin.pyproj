@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{db96a834-ea16-4d09-a1ad-4cd2e7f1769d}</ProjectGuid>
+    <ProjectHome />
+    <StartupFile />
+    <SearchPath>..\bin</SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <InterpreterId>Global|PythonCore|2.7</InterpreterId>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <InterpreterReference Include="Global|PythonCore|2.7" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="dcc\" />
+    <Folder Include="dcc\maya\" />
+    <Folder Include="lib\" />
+    <Folder Include="lib\dccHelper\" />
+    <Folder Include="lib\object\" />
+    <Folder Include="lib\pluginEditor\" />
+    <Folder Include="pythonNet\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="dcc\maya\initPlugin.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="dcc\maya\startup.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="lib\dccHelper\dccHelperBase.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="lib\dccHelper\dccHelperMaya.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="lib\dccHelper\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="lib\object\manager.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="lib\object\__init__.py" />
+    <Compile Include="lib\plateform.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="lib\pluginEditor\pluginWindow.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="lib\pluginEditor\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="pythonNet\clr.pyd" />
+    <Content Include="pythonNet\Python.Runtime.dll" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+</Project>

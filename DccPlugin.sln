@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2009
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFDccPlugin", "source\WPFDccPlugin\WPFDccPlugin.csproj", "{B79A095D-1681-4525-B4CE-7A33FD3C524C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFMayaPlugin", "source\WPFMayaPlugin\WPFMayaPlugin.csproj", "{E1E9BDA9-8F43-4A0A-B48F-090C07F50DFD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFDccPluginTest", "WPFTestApp\WPFDccPluginTest.csproj", "{DCA4E35F-A8D9-4C97-9A3B-F4253858CA75}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PythonDccPlugin", "source\PythonDccPlugin\PythonDccPlugin.vcxproj", "{9F985D1B-7699-413D-A84B-E3D70981C0A5}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "WrapperDccPlugin", "source\WrapperDccPlugin\WrapperDccPlugin.vcxproj", "{325BF0D5-8676-480D-86AD-735D3F2F89F4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B79A095D-1681-4525-B4CE-7A33FD3C524C}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{B79A095D-1681-4525-B4CE-7A33FD3C524C}.Debug|x64.Build.0 = Debug|Any CPU
+		{B79A095D-1681-4525-B4CE-7A33FD3C524C}.Release|x64.ActiveCfg = Release|Any CPU
+		{B79A095D-1681-4525-B4CE-7A33FD3C524C}.Release|x64.Build.0 = Release|Any CPU
+		{E1E9BDA9-8F43-4A0A-B48F-090C07F50DFD}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{E1E9BDA9-8F43-4A0A-B48F-090C07F50DFD}.Debug|x64.Build.0 = Debug|Any CPU
+		{E1E9BDA9-8F43-4A0A-B48F-090C07F50DFD}.Release|x64.ActiveCfg = Release|Any CPU
+		{E1E9BDA9-8F43-4A0A-B48F-090C07F50DFD}.Release|x64.Build.0 = Release|Any CPU
+		{DCA4E35F-A8D9-4C97-9A3B-F4253858CA75}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{DCA4E35F-A8D9-4C97-9A3B-F4253858CA75}.Debug|x64.Build.0 = Debug|Any CPU
+		{DCA4E35F-A8D9-4C97-9A3B-F4253858CA75}.Release|x64.ActiveCfg = Release|Any CPU
+		{DCA4E35F-A8D9-4C97-9A3B-F4253858CA75}.Release|x64.Build.0 = Release|Any CPU
+		{9F985D1B-7699-413D-A84B-E3D70981C0A5}.Debug|x64.ActiveCfg = Debug|x64
+		{9F985D1B-7699-413D-A84B-E3D70981C0A5}.Debug|x64.Build.0 = Debug|x64
+		{9F985D1B-7699-413D-A84B-E3D70981C0A5}.Release|x64.ActiveCfg = Release|x64
+		{9F985D1B-7699-413D-A84B-E3D70981C0A5}.Release|x64.Build.0 = Release|x64
+		{325BF0D5-8676-480D-86AD-735D3F2F89F4}.Debug|x64.ActiveCfg = Debug|x64
+		{325BF0D5-8676-480D-86AD-735D3F2F89F4}.Debug|x64.Build.0 = Debug|x64
+		{325BF0D5-8676-480D-86AD-735D3F2F89F4}.Release|x64.ActiveCfg = Release|x64
+		{325BF0D5-8676-480D-86AD-735D3F2F89F4}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DBD67D1F-BF4C-4C84-89F8-20415D71B1C0}
+	EndGlobalSection
+EndGlobal
