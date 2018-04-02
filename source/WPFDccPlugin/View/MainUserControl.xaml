@@ -7,7 +7,18 @@
              mc:Ignorable="d" 
              d:DesignHeight="500" d:DesignWidth="500">
     <Grid>
-        <Button Content="{Binding Source={x:Static manager:PluginManager.Instance}, Path=Name}"
-                Command="{Binding TestCommand}"/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition Height="*"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Button Grid.Row="1"  Grid.Column="1" Content="{Binding Source={x:Static manager:PluginManager.Instance}, Path=Name}"
+                Command="{Binding TestCommand}" Style="{DynamicResource AccentedSquareButtonStyle}"/>
     </Grid>
 </UserControl>

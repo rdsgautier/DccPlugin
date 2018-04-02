@@ -13,6 +13,7 @@
 .vs/
 python-packages/.vs/
 bin/
+packages/
 temp/
 WPFTestApp/bin/
 WPFTestApp/obj/
