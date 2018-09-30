@@ -1,4 +1,4 @@
-from pluginEditor import plugin
+from pluginEditor import managedplugin
 
 def show():
-    plugin.Show()
+    managedplugin.Show()

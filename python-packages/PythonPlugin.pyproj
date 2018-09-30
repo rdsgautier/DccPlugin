@@ -24,6 +24,9 @@
   <ItemGroup>
     <Folder Include="dcc\" />
     <Folder Include="dcc\maya\" />
+    <Folder Include="dcc\max\" />
+    <Folder Include="dcc\maya\SetupMaya\" />
+    <Folder Include="dcc\setup\" />
     <Folder Include="lib\" />
     <Folder Include="lib\dccHelper\" />
     <Folder Include="lib\object\" />
@@ -31,10 +34,15 @@
     <Folder Include="pythonNet\" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="dcc\max\initPlugin.py" />
     <Compile Include="dcc\maya\initPlugin.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="dcc\maya\SetupMaya\userSetup.py" />
     <Compile Include="dcc\maya\startup.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="dcc\setup\path.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="lib\dccHelper\dccHelperBase.py">
@@ -64,6 +72,8 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="dcc\max\startup.ms" />
+    <Content Include="dcc\maya\SetupMaya\Maya.env" />
     <Content Include="pythonNet\clr.pyd" />
     <Content Include="pythonNet\Python.Runtime.dll" />
   </ItemGroup>

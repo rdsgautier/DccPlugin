@@ -3,7 +3,6 @@
 
 namespace BaseWrapper
 {
-	// This class is exported from the MathLibrary.dll  
 	class Functions
 	{
 	public:

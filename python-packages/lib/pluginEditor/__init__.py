@@ -1,18 +1,18 @@
 import clr
 import plateform
 
-plugin = None
+managedplugin = None
 if plateform.DCCplateform == 'maya':
     # maya plugin manager
     clr.AddReference("WPFMayaPlugin.nll")
     from WPFMayaPlugin import MayaPluginManager
-    plugin = MayaPluginManager()
+    managedplugin = MayaPluginManager()
 
 if plateform.DCCplateform == 'max':
     # max plugin manager
     clr.AddReference("WPFMaxPlugin")
     from WPFMaxPlugin import MaxPluginManager
-    plugin = MaxPluginManager()
+    managedplugin = MaxPluginManager()
 
 # create
-plugin.Create()
+managedplugin.Create()

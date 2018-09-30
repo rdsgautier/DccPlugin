@@ -1,8 +1,8 @@
-import plugin
+import cppplugin # pyd file containing interface on c++ code through boost python
 
 def Test():
-    world = plugin.World()
-    world.set('Hello')
-    world.updateUI()
-    return world.greet()
+    ui = cppplugin.UITest()
+    ui.set('Hello')
+    ui.updateUI()
+    return ui.greet()
 

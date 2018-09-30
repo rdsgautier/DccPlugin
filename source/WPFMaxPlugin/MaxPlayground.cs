@@ -7,7 +7,7 @@ namespace WPFMaxPlugin
     {
         public override void RunPythonCommand(string command)
         {
-            var pythonCommand = "python.Execute " + command;
+            var pythonCommand = $"python.Execute \"{command}\"";
             MaxscriptSDK.ExecuteMaxscriptCommand(pythonCommand);
         }
     }

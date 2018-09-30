@@ -5,5 +5,5 @@ using namespace WPFDccPlugin::Manager;
 
 void CLRWrapper::UpdateUI()
 {
-	PluginManager::Instance->Name = "ToTo";
+	PluginManager::Instance->Name = "Button Name Changed";
 }
