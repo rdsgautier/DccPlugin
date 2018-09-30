@@ -23,6 +23,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="dcc\" />
+    <Folder Include="dcc\max\SetupMax\" />
     <Folder Include="dcc\maya\" />
     <Folder Include="dcc\max\" />
     <Folder Include="dcc\maya\SetupMaya\" />
@@ -72,7 +73,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="dcc\max\startup.ms" />
+    <Content Include="dcc\max\SetupMax\startup.ms" />
     <Content Include="dcc\maya\SetupMaya\Maya.env" />
     <Content Include="pythonNet\clr.pyd" />
     <Content Include="pythonNet\Python.Runtime.dll" />
