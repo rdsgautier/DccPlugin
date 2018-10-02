@@ -28,14 +28,14 @@ namespace WPFDccPlugin.Manager
         private PluginManager()
         {
             // here : objects to initate once
-            _name = "test";
+            UpdateUI("test");
         }
 
         public IPlayground Playground { get; set; }
 
         #region Test
         private string _name;
-        public string Name
+        internal string Name
         {
             get => _name;
             set
@@ -43,6 +43,11 @@ namespace WPFDccPlugin.Manager
                 _name = value;
                 RaisePropertyChanged();
             }
+        }
+
+        public void UpdateUI(string newName)
+        {
+            Name = newName;
         }
         #endregion
     }
