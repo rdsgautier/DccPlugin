@@ -35,10 +35,10 @@ namespace WPFDccPlugin.Manager
 
         #region Test
         private string _name;
-        internal string Name
+        public string Name
         {
-            get => _name;
-            set
+            get { return _name; }
+            internal set
             {
                 _name = value;
                 RaisePropertyChanged();
